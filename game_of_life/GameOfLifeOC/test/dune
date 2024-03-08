@@ -1,0 +1,4 @@
+(test
+(name testGrid)
+(libraries ounit2 game_of_life_oc)
+(modules TestGrid))

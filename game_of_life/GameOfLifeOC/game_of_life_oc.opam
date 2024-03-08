@@ -1,0 +1,13 @@
+opam-version: "2.1.5"
+maintainer: "Dhruv Sharma dhruv.sharma@polytechnique.org"
+authors: ["Dhruv Sharma"]
+license: "MIT"
+build: [
+  ["dune" "subst"]
+  ["dune" "build" "-p" name "-j" jobs]
+]
+depends: [
+    "ocaml" {>= "4.08.1"}
+    "dune" {>= "2.0"}
+    "ounit" {>= "2.2.0"}
+]

@@ -1,0 +1,7 @@
+; (executable
+;  (name  "GameOfLifeOC")
+;  (public_name  "GameOfLifeOC"))
+
+(library
+ (name gameoflifeoc)
+ (public_name game_of_life_oc))

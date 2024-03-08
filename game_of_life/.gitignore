@@ -1,0 +1,37 @@
+_build
+
+bin/
+obj/
+.vs/
+.vscode/
+packages/
+
+## Files to ignore
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.pidb
+*.booproj
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.log
+*.pgproj
+*.psess
+*.vsp
+*.vspx
+*.sqlite
+*.opendb
+*.db-shm
+*.db-wal
+*.pfx
+*.publishsettings
+*.nupkg
+*.snk
+
+## Visual Studio Code - specific
+.history/
+settings.json
+tasks.json
+launch.json

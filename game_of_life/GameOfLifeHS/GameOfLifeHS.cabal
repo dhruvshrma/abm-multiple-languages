@@ -1,0 +1,62 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: aee192dcf8af9ebd34dc8029fcb6a63058a5301bbafd846134150d904ba9f466
+
+name:           GameOfLifeHS
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/dhruvshrma/GameOfLifeHS#readme>
+homepage:       https://github.com/dhruvshrma/GameOfLifeHS#readme
+bug-reports:    https://github.com/dhruvshrma/GameOfLifeHS/issues
+author:         Dhruv Sharma
+maintainer:     dhruv.sharma@polytechnique.org
+copyright:      2024 Dhruv Sharma
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+extra-source-files:
+    CHANGELOG.md
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/dhruvshrma/GameOfLifeHS
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_GameOfLifeHS
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable GameOfLifeHS-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_GameOfLifeHS
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      GameOfLifeHS
+    , base >=4.7 && <5
+  default-language: Haskell2010
+
+test-suite GameOfLifeHS-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_GameOfLifeHS
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      GameOfLifeHS
+    , base >=4.7 && <5
+  default-language: Haskell2010
